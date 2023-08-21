@@ -1,0 +1,163 @@
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Turtle website</title>
+        <link rel="stylesheet" href="style2.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <html lang="en">
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://cdn.tutorialjinni.com/intl-tel-input/17.0.8/css/intlTelInput.css"/>
+        <script src="https://cdn.tutorialjinni.com/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+
+
+    </head>
+    <body>
+        <section class="sub-header15">
+            <nav> 
+                <a href="index.html"><img src="image/Logo1.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="family.html">The Sea Turtle Family</a></li>
+                        <li><a href="threats.html">Threats To Turtles</a></li>
+                        <li><a href="hatcheries.html">Turtle Hatcheries</a></li>
+                        <li><a href="donate.html">Donate & Purchase</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+                
+            </nav>
+            <h1><i>Buy Tickets</i></h1>
+        </section>
+<br><br>
+
+
+<!-------------------------------------------------------------------------------------------!-->
+<section class="boxer">
+<form  id="create-account-form" action="payment.html" method="GET">
+        
+    <div class="title">
+        <h2>Customer Details</h2>
+        </div>
+    
+    <!-- USERNAME -->
+    <div class="input-group">
+        <label for="username">Full Name</label>
+        <input type="text" id="username" placeholder="Same as on your ID" name="username">
+        <i class="fa fa-check-circle"></i>
+        <i class="fa fa-exclamation-circle"></i>
+        <p>Error Message</p>
+    </div>
+    <!--PHONE NUMBER-->
+    <div class="input-group">
+        <label for="number">Mobile Number</label>
+        <input type="text" id="phone" placeholder="012 345 6789" name="phonenumber">
+        <i class="fa fa-check-circle"></i>
+        <i class="fa fa-exclamation-circle"></i>
+        <p>Error Message</p>
+    </div>
+    <!-- EMAIL -->
+    <div class="input-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Email" name="email">
+        <i class="fa fa-check-circle"></i>
+        <i class="fa fa-exclamation-circle"></i>
+        <p>Error Message</p>
+    </div>
+    <!-- CONFIRM EMAIL-->
+    <div class="input-group">
+        <label for="confirm-email">Confirm Email</label>
+        <input type="email" id="confirm-email" placeholder="RE-enter" name="confirmemail">
+        <i class="fa fa-check-circle"></i>
+        <i class="fa fa-exclamation-circle"></i>
+        <p>Error Message</p>
+    </div>
+    <!-- Gender -->
+    <div class="input-group">
+        <label for="Gender">Gender:  </label>
+              <select id="gender">
+                <option selected>Select the gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+              </select>
+    </div>
+
+   
+    <button type="submit" class="btn" onclick="saveToLocal()">Continue with purchase</button>
+
+</form>
+</section>
+<section class="detailbox"> 
+    <h2><u>Summary Table</u></h2>
+    <br>
+    <table class="detailtable"> 
+        <tr><th>Date</th>
+        <td id="selectedDate"></td>
+        </tr>
+        <tr><th>Time</th>
+        <td id="selectedTime"></td>
+        </tr>
+        <tr><th>Duration</th>
+        <td id="selectedDuration"></td>
+        </tr>
+        <tr><th>SL Adult</th>
+            <td id="selectedSLAdult"></td>
+        </tr>
+        <tr><th>SL Child</th>
+            <td id="selectedSLChild"></td>
+        </tr>
+        <tr><th>Foreigner Adult</th>
+            <td id="selectedForeignerAdult"></td>
+        </tr>
+        <tr><th>Foreigner Child</th>
+            <td id="selectedForeignerChild"></td>
+        </tr>
+        <tr><th style="background-color: blue; color:white;">Total Price ($)</th>
+            <td id="selectedtotalPayable" style="background-color: blue; color:white;"></td>
+        </tr>
+
+    </table>
+</section>
+
+
+
+<script src="details.js"></script>
+            
+<br>
+<br>
+        <!------ footer------>
+
+<hr style="height:4px;border-width:0;color:rgb(0, 0, 0);background-color:rgb(0, 0, 0)">
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>The Sri Lanka Tourism Alliance welcomes individuals or groups from Sri Lanka or abroad, including those in the public sector who work for the government, educational institutions, regional or industry<br> associations related to Sri Lanka tourism as well as those in the private sector who own or work for a business connected to Sri Lanka tourism. The Alliance does not charge for annual membership.</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-youtube"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-twitter"></i>
+    </div>
+    <p>Made with  <i class="fa fa-heart-o"></i> by Save The Turtles</p>
+</section>
+
+<!------JavaScript for toggle menu------>
+
+        <script>
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+
+            function hideMenu(){
+                navLinks.style.right = "-200";
+            }
+        </script>
+
+
+    </body>
+</html>
