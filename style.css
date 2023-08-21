@@ -1,0 +1,1146 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(image/turtle6.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav img{
+    height: 60px;
+    width: 80%;
+    border: 4px solid #4db3e9;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;  
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+    font-family:Georgia ;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 65px;
+    font-family: Georgia;
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 20px;
+    color: #fff;
+    font-family: Georgia;
+}
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    font-family: Georgia;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 0.5s;
+}
+
+nav .fa{
+    display: none;
+}
+
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px; 
+    }
+    .text-box p{
+        margin: 10px 0 40px;
+        font-size: 13px;
+        color: #fff;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #04b7f3;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+}
+
+.nav-links ul{
+    padding: 30px;
+}
+
+/*------ turtles in srilanka------*/
+
+.turtles{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.turtles h1{
+    font-family:  Georgia;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.turtles p{
+    font-family:  Georgia;
+    color: #000000;
+    font-size: 20px;
+    line-height: 28px;
+    padding: 10px;
+}
+
+.row {
+    display: flex;
+  }
+  
+  .turtles-col {
+    flex: 33.33%;
+    padding: 5px;
+    float: left;
+    width: 33.33%;
+  }
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+.turtles img{
+    border: 4px solid #000000;
+}
+
+.turtles img:hover{
+    transform: scaleX(-1);
+}
+
+
+/*------ second ------*/
+.second{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.second h1{
+    font-size: 40px;
+    font-weight: 600;
+    font-family: Georgia;
+}
+
+.second p{
+    color: #000000;
+    font-size: 20px;
+    line-height: 28px;
+    padding: 10px;
+    font-family: Georgia;
+}
+
+.row {
+    display: flex;
+  }
+  
+  .second-col {
+    flex: 33.33%;
+    padding: 5px;
+    float: left;
+    width: 33.33%;
+  }
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+.second img{
+    border: 4px solid #000000;
+}
+.second img:hover{
+    transform: scaleX(-1);
+}
+
+/*------proofs------*/
+
+.proofs{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+.proofs-col{
+    flex-basis: 44%;
+    border: 3px solid #000000;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #2fbdf5;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+}
+
+.proofs-col img{
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+
+.proofs h1{
+    font-size: 40px;
+    font-weight: 600;
+    font-family: Georgia;
+}
+
+.proofs-col p{
+    padding: 0;
+    font-size: 15px;
+    font-family: Georgia;
+}
+
+.proofs-col h3{
+    margin-top: 15px;
+    text-align: left;
+    font-family: Georgia;
+
+}
+
+.proofs-col .fa{
+    color: #e8d505;
+}
+@media(max-width: 700px){
+    .proofs-col img{
+        
+        margin-left: 0px;
+        margin-right: 15px;
+       
+    }
+
+}
+
+/*-------footer--------*/
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer h4{
+    color: rgb(0, 0, 0);
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.footer p{
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    font-family: Georgia;
+}
+
+.icons .fa{
+    color: red;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
+.fa-heart-o{
+    color: red; 
+}
+
+/*------------------------------- Family Page ------------------------------------*/
+
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(image/turtle18.webp);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+
+}
+
+.sub-header h1{
+    margin-top: 50px;
+    font-size: 60px;
+    font-family: Georgia;
+}
+
+.family{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.family h1{
+    font-size: 40px;
+    font-weight: 600;
+    font-family: Georgia;
+}
+
+.family p{
+    color: #000000;
+    font-size: 25px;
+    line-height: 22px;
+    padding: 10px;
+    font-family: Georgia;
+}
+
+.family-second{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.family-second-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+
+.family-second-col img{
+    width: 100%;
+    border: 4px solid #000000;
+
+}
+
+.family-second-col h1{
+    padding: 0;
+    font-size: 30px;
+    font-family: Georgia;
+}
+.family-second-col p{
+    padding: 15px 0 25px;
+    font-size: 23px;
+    font-family: Georgia;
+    line-height: 35px;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    
+}
+table, tr, th, td{
+    border: 3px solid rgb(0, 0, 0);
+    background-color: rgb(49, 197, 255)
+}
+.table-image{
+   width: 100px;
+   height: 100px; 
+  
+}
+th{
+    font-size: 25px;
+    font-weight: 700;
+    font-family: Georgia;
+}
+td{
+    padding: 15px;
+    text-align: center;
+    font-family: Georgia;
+    font-size: 20px;
+    font-weight: 700;
+}
+.table-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*------------------------------threats page-------------------------------*/
+.sub-header2{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(image/turtle3.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+
+}
+.sub-header2 h1{
+font-size: 60px;
+font-family: Georgia;
+margin-top: 50px;
+}
+
+.threats{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.threats h1{
+    font-size: 40px;
+    font-family: Georgia;
+    font-weight: 600;
+}
+
+.threats p{
+    color: #000000;
+    font-size: 22px;
+    line-height: 40px;
+    font-family: Georgia;
+    padding: 30px;
+    letter-spacing: 2px;
+}
+/*--------------threats2------------------*/
+.threats2{
+    position: relative;
+    width: 50%;
+    left: 20%;
+    top: 20px;
+    background-color: skyblue;
+    padding: 80px;
+}
+.threats2 h2{
+    padding: 0;
+    font-size: 30px;
+    font-family: Georgia;
+}
+
+.threats2 p{
+    padding: 15px 0 25px;
+    font-size: 23px;
+    font-family: Georgia;
+    line-height: 35px;
+}
+
+.threats2 img{
+    float: right;
+    width: 450px;
+    border: 2px solid #000000;
+}
+
+.threats2 button{
+    background-color: #ffffff;
+    font-size: 15px;
+    padding: 15px;
+    border-radius: 15px ;
+    color: #000000;
+    border: 2px solid #fff;
+}
+
+.threats2 button:hover{
+    border: 2px solid red;
+    color: #fff;
+    background: red;
+    transition: 0.5s;
+}
+
+
+
+/*---------------------------------------------------help page-----------------------------------*/
+
+.sub-header3{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(image/turtle16.webp);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+
+}
+.sub-header3 h1{
+font-size: 60px;
+margin-top: 50px;
+font-family: Georgia;
+}
+
+.help{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.help1 .help3{
+    width: 50%;
+    position: relative;
+    left: 25%;
+}
+
+.help h1{
+    font-size: 40px;
+    font-weight: 600;
+    font-family: Georgia;
+}
+
+.help p{
+    color: #000000;
+    font-size: 22px;
+    line-height: 40px;
+    font-family: Georgia;
+    padding: 30px;
+    letter-spacing: 2px;
+}
+
+/*-----------------------------help2-------------------------*/
+.help1{
+    text-align: center;
+    
+}
+.help1 h2{
+    font-size: 35px;
+    font-weight: 200;
+    font-family: Georgia;
+    letter-spacing: 2px;
+    line-height: 28px;
+    
+}
+
+.help1 p{
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: Georgia;
+    line-height: 28px;
+    
+}
+.help3 h1{
+    font-family: Georgia;
+    font-weight: 700;
+    font-size: 30px;  
+    line-height: 30px;
+    
+      
+}
+.help3 p{
+    font-family: Georgia;
+    font-weight: 500; 
+    text-align: justify;
+    line-height: 30px;
+ 
+}
+.help3 ul li{
+    text-align: justify;
+    position: relative;
+    left: 25%;
+    font-size: 17px;
+    line-height: 35px;
+}
+.help3 img{
+    border-radius: 50%;
+    width: 50%;
+}
+
+
+/*---------------------------------------------------hatcheries page-----------------------------------------*/
+
+.sub-header4{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(image/hatcher.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.sub-header4 h1{
+    font-size: 60px;
+    margin-top: 50px;
+    font-family: Georgia;
+}
+
+.hatcheries{
+    width: 50%;
+    margin: auto;
+    padding-top: 100px;
+}
+.hatcheries h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    font-family: Georgia;
+}
+   
+
+.hatcheries p{
+    text-align: justify;
+    line-height: 28px;
+    font-size: 20px;
+    font-family: Georgia;
+}
+
+.hatcheries ul li{
+    position: relative;
+    left: 27%;
+    font-size: 20px;
+    line-height: 30px;
+    font-family: Georgia;
+}
+
+.hatcheries .column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+    flex: 100%;
+}
+
+.hatcheries .row {
+    display: flex;
+}
+   
+.hatcheries .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.imglink img{
+    width: 30%;
+    height: 50%;
+    padding-left: 36px;
+}
+.click h2{
+    padding-left: 10px;
+    padding: 10px;
+    font-family: Georgia;
+    background-color: #2f06fe;
+    border: 3px solid black;
+    position: absolute;
+    top: 1040px;
+    text-align: left;
+}
+
+/*-------------------------------------------------hikkaduwa page--------------------------*/
+.sub-header5{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(image/hikkkk.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.sub-header5 h1{
+    font-size: 60px;
+    margin-top: 50px;
+    font-family: Georgia;
+}
+
+.hikkaduwa h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    font-family: Georgia;
+}
+
+.hikkaduwa .row {
+    display: flex;
+  }
+  
+.hikkaduwa .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.hikkaduwa .row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+}
+
+.hikkaduwa-col img{
+    padding-left: 27px;
+    border-radius: 5ch;
+    height: 320px;
+}
+.hikkaduwa-col1 img{
+    padding-left: 27px;
+    border-radius: 50%;
+    padding-left: 60px;
+    height: 330px;
+}
+.hikkaduwa-col2 img{
+    padding-left: 27px;
+    border-radius: 5ch;
+}
+/*-------------------------------------------------------------------*/
+.hikkaduwa2 h2{
+    padding-left: 50px;
+    font-family: Georgia;
+}
+.hikkaduwa2 p{
+    text-align: justify;
+    padding-left: 50px;
+    padding-top: 25px;
+    line-height: 35px;
+    font-size: 20px;
+    font-family: Georgia;
+}
+/*--------------------------------------------------------------------*/
+.hikkaduwa3 h2{
+    padding-left: 50px;
+    font-family: Georgia;
+    position: relative;
+    
+}
+.hikkaduwa3 p{
+    position: relative;
+    text-align: justify;
+    padding-left: 50px;
+    padding-top: 25px;
+    line-height: 35px;
+    font-size: 20px;
+    font-family: Georgia;
+}
+.hikkaduwa4{
+    position: relative;
+    
+}
+.hikkaduwa4 h1{
+    font-size: 25px;
+    font-family: Georgia;
+    padding-left: 20px;
+}
+.hikkaduwa4 ul li{
+    text-align: justify;
+    position: relative;
+    left: 20%;
+    font-size: 20px;
+    font-family: Georgia;
+    line-height: 35px;
+}
+.imglink1 img{
+    width: 30%;
+    height: 50%;
+    padding-left: 180px;
+    position: relative;
+}
+
+.location1{
+    width: 50%;
+}
+.hik table{
+    width: 90%;
+    left: 5%;
+    position: relative;
+    background: none;
+    border: none;
+}
+.hik th{
+    background: none;
+    border: none;
+}
+.hik tr{
+    background: none;
+    border: none;
+}
+.Booknow1{
+    padding-left: 50px;
+}
+ .booking{
+    padding: 10px;
+    width: 13%;
+    border-radius: 25px;
+    
+
+}
+
+
+
+
+/*---------------------------------------------------Donate page-----------------------------------------*/
+
+.sub-header8{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(image/turtle21.webp);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.sub-header8 h1{
+    font-size: 60px;
+    margin-top: 50px;
+    font-family: Georgia;
+
+}
+/*-----------------------------------------------------------------------*/
+.donate{
+    text-align: justify;
+    padding: 120px;
+}
+
+.donate h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    font-family: Georgia;
+
+}
+.donate p{
+    line-height: 35px;
+    font-size: 22px;
+    font-family: Georgia;
+}
+.donate video{
+    padding-left: 25%;
+}
+
+.donate2{
+    text-align: center;
+}
+.donate2 h2{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+.donate2 p{
+    font-size: 22px;
+    line-height: 35px;
+}
+
+.container{
+    box-sizing: border-box;
+    padding: 2%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 25%;
+    margin-right: 20%;
+    background-color: #28dfff;
+    border-radius: 12px;
+    width: 850px;
+}
+
+.container p:first-child{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.time{
+    margin-top: 3%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 4%;
+    background-color: rgb(176, 178, 198);
+    border-radius: 10px;
+}
+
+.time span:first-child{
+    padding: 4%;
+    padding-left: 30%;
+
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.time span{
+    padding: 4%;
+    padding-left: 30%;
+    background-color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+p:nth-child(3){
+    margin-top: 5%;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.name input{
+    width: 30%;
+}
+
+.value{
+    width: 100%;
+    height: 25px;
+    margin-top: 2%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.money{
+    border: 2px solid #5703ff;
+    border-radius: 7px;
+
+    font-size: 28px;
+    font-weight: 600;
+    padding-left: 30%;
+    cursor: pointer;
+}
+
+.money:hover{
+    background-color: #000000;
+    color: #fff;
+}
+
+.confirm{
+    margin-top: 5%;
+}
+
+.input{
+    margin-top: 5%;
+    
+}
+
+input[type="text"]{
+    margin-top: 2%;
+    width: 100%;
+    height: 50px;
+    padding-left: 10px;
+    font-size: 20px;
+
+    border-radius: 5px;
+}
+
+p:nth-child(7){
+    margin-top: 10px;
+    color: rgb(76, 97, 235);
+    font-size: 18px;
+}
+
+button{
+    width: 100%;
+    height: 50px;
+    margin-top: 5%;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    background-color: rgb(8, 8, 67);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    color: blue;
+}
+
+p:nth-child(9){
+    margin-top: 10%;
+    font-size: 20px;
+}
+
+.blue{
+    color: blue;
+    text-decoration: underline;
+}
+.center{ 
+    padding-right:300px;
+
+    width: 800px;
+    display: flex;
+
+}
+/*---------------------------store---------------------------*/
+.store {
+    text-align: center;
+}
+.store h2{
+    font-size: 38px;
+    font-weight: 600;
+    font-family: Georgia;
+
+}
+.store p{
+    line-height: 35px;
+    font-family: Georgia;
+    font-size: 22px;
+
+}
+
+.store table{
+    position: relative;
+    
+    border-spacing: 40px;
+}
+ 
+.store img{
+    width: 100%;
+    height: 300px;
+}
+.mama table tr{
+    border-spacing: 40px;
+    padding: 30px;
+}
+
+
+
+
+/*----------------------------------contact page----------------------------------------*/
+.sub-header9{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(image/turtle20.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.sub-header9 h1{
+    font-size: 60px;
+    font-family: Georgia;
+    margin-top: 50px;
+}
+.contact{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+
+.contact iframe{
+    width: 100%;
+}
+
+.contact-us{
+    width: 80%;
+    margin: auto;
+}
+
+.contact-col{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+
+.contact-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.contact-col div .fa{
+    font-size: 28px;
+    color: red;
+    margin: 10px;
+    margin-right: 30px;
+}
+
+.contact-col div p{
+    padding: 0;
+    font-family: Georgia;
+
+}
+
+.contact-col div h5{
+    font-size: 20px;
+    font-family: Georgia;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 400;
+}
+
+.contact-col input, .contact-col textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+
+.submit-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    border: 1px solid #000000;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    background-color: #918a8a;
+    position: relative;
+    cursor: pointer;
+}
+.submit-btn:hover{
+        border: 1px solid #f44336;
+        background: #f44336;
+        transition: 0.5s;
+}
+
+
+
+
+
+
+
+

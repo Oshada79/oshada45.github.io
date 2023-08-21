@@ -1,0 +1,127 @@
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Turtle website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+    <body>
+        <section class="sub-header2">
+            <nav> 
+                <a href="index.html"><img src="image/Logo1.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="family.html">The Sea Turtle Family</a></li>
+                        <li><a href="threats.html">Threats To Turtles</a></li>
+                        <li><a href="hatcheries.html">Turtle Hatcheries</a></li>
+                        <li><a href="donate.html">Donate & Purchase</a></li>
+                        <li><a href="">Contact Us</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+                
+            </nav>
+            <h1><i>Threats To Turtles</i></h1>
+        </section>
+
+        <!--------- threats content------>
+        <section class="threats">
+            <h1><u>Sea Turtle Threats</u></h1>
+            <p>&starf;Sea turtles are strong and durable. Since the time of the dinosaurs, they have swum the seas, protected by special body armor from their natural foes. However, in recent times, due to the quickly expanding human population, there have been new, intense pressures that have made it harder for sea turtles to survive. Five primary risks to sea turtles globally have been recognized by the IUCN-SSC Marine Turtle Specialist Group: <b>Fishing Bycatch, Coastal Development, Pollution and Infections, Direct Take and Climate Change.</p>
+        </section>
+        <br>
+
+        <!------ threats2-------->
+        <section class="threats2">
+            <img src="image/fishing.jpg">
+                <h2>FISHING BYCATCH</h2>
+                <P>Thousands to tens of thousands of see turtles are said to perish each year as a result of the fishing business. Turtles caught in gill nets,trawls and longlines are discarded as bycatch. Additionally, the disruption to their food supply and habitat has an effect on those who are able to evade fishing nets.</P>
+                <a href="button.html">
+                    <button>How Can We Help?</button>
+                </a>
+        </section>
+        
+        <br><br>
+
+        <section class="threats2">
+            <img src="image/COSTAL.webp">
+                <h2>COASTAL DEVELOPMENT</h2>
+                <P>Because of receding coasts, sea turtle habitats are devastated every year. Sea turtle food sources and nesting places are severely impacted anywhere there is boat vessel traffic, anytime a new hotel or hight-rise is put up along the shore and everywhere the sea bottom is dug up and the beach erodes.</P>
+                <a href="button.html">
+                    <button>How Can We Help?</button>
+                </a>
+        </section>
+
+        <br><br>
+
+        <section class="threats2">
+            <img src="image/pollution.jpg">
+                <h2>POLLUTION AND INFECTIONS</h2>
+                <P>Sea turtles are harmed by marine pollution in a number of ways. Sea turtles are harmed by ingesting and being entangled in waste such as plastic trash, fishing gear left out to sea, petroleum byproducts and other objects. The immunesystems of the turtles may be weakened by ocean pollution, which may also interfere with nesting habits and hatchling orientation.</P>
+                <a href="button.html">
+                    <button>How Can We Help?</button>
+                </a>
+        </section>
+
+        <br><br>
+
+        <section class="threats2">
+            <img src="image/take.jpg">
+                <h2>DIRECT TAKE</h2>
+                <P>Turtles are killed and traded on the global market for exotic food, oil, leather and jewelry. Over the past 100 years, millions of hawksbill turtles have been killed just for their shells. Conservation efforts have reduced the global trade of luxury and craft items but it still remains an ongoing threat to turtles in parts of Africa, Asia and the Americas.</P>
+                <a href="button.html">
+                    <button>How Can We Help?</button>
+                </a>
+        </section>
+
+        <br><br>
+
+        <section class="threats2">
+            <img src="image/climate.png">
+                <h2>CLIMATE CHANGE</h2>
+                <P>Climate Change can have a major impact on sea turtles, affecting their natural sex rations, disease outbreaks and the frequency of extreme weather events.</P>
+                <a href="button.html">
+                    <button>How Can We Help?</button>
+                </a>
+        </section>
+
+        
+        
+
+<br><br><br><br>
+<!------ footer------>
+
+<hr style="height:4px;border-width:0;color:rgb(0, 0, 0);background-color:rgb(0, 0, 0)">
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p style=" font-size: 13px;">The Sri Lanka Tourism Alliance welcomes individuals or groups from Sri Lanka or abroad, including those in the public sector who work for the government, educational institutions, regional or industry<br> associations related to Sri Lanka tourism as well as those in the private sector who own or work for a business connected to Sri Lanka tourism. The Alliance does not charge for annual membership.</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-youtube"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-twitter"></i>
+    </div>
+    <p style="font-size: 13px;">Made with  <i class="fa fa-heart-o"></i> by Save The Turtles</p>
+</section>
+
+<!------JavaScript for toggle menu------>
+
+        <script>
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+
+            function hideMenu(){
+                navLinks.style.right = "-200";
+            }
+        </script>
+
+
+    </body>
+</html>
