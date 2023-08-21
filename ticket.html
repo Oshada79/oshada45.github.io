@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Turtle website</title>
+        <link rel="stylesheet" href="style2.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+    <body>
+        <section class="sub-header15">
+            <nav> 
+                <a href="index.html">
+                  <img src="image/Logo1.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="family.html">The Sea Turtle Family</a></li>
+                        <li><a href="threats.html">Threats To Turtles</a></li>
+                        <li><a href="hatcheries.html">Turtle Hatcheries</a></li>
+                        <li><a href="donate.html">Donate & Purchase</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+                
+            </nav>
+            <h1><i>Buy Tickets</i></h1>
+        </section>
+
+        <br><br><br>
+
+
+          <div class="container">
+            <h1>Book your tickets to Another World</h1>
+            <br><br>
+        
+            <!-- Dates Section -->
+            <div class="section">
+              <h2>Dates</h2>
+              <br>
+              <select id="selectedDate">
+                <input type="date" id="reservation-date">
+              </input>
+                </select>
+              </div>
+
+              <!-- Ticket Prices---->
+              <div class="section">
+                <h2>Ticket Price</h2>
+                <br>
+                <table >
+                  <tr><th>Guests</th>
+                    <td>Peak Hour</td>
+                    <td>Normal Hour</td>
+                  </tr>
+
+                  <tr><th>SL Adults</th>
+                    <td>6 USD</td>
+                    <td>4 USD</td>
+                  </tr>
+
+                  <tr><th>SL Childern</th>
+                    <td>3 USD</td>
+                    <td>2 USD</td>
+                  </tr>
+
+                  <tr><th>Foreigner Adults</th>
+                    <td>13 USD</td>
+                    <td>10 USD</td>
+                  </tr>
+
+                  <tr><th>Foreigner Children</th>
+                    <td>8 USD</td>
+                    <td>5 USD</td>
+                  </tr>
+
+                  <tr><th>Infants(UNDER 04)</th>
+                    <td>Free</td>
+                    <td>Free</td>
+                  </tr>
+
+                </table>
+              </div>
+
+        
+            <!-- Guests Section -->
+            <div class="section">
+              <h2>Guests</h2>
+              <br>
+              <table id="guestsTable">
+                <!-- Table for ticket categories and quantities will be generated dynamically -->
+              </table>
+            </div>
+        
+            <!-- Duration Section -->
+            <div class="section">
+              <h2>Duration</h2>
+              <br>
+              <select id="duration" multiple>
+                <option value="07:00-08:00">07:00 am to 08:00 am</option>
+                <option value="08:00-09:00">08:00 am to 09:00 am</option>
+                <option value="09:00-10:00">09:00 am to 10:00 am</option>
+                <option value="10:00-11:00">10:00 am to 11:00 am (Peak)</option>
+                <option value="11:00-12:00">11:00 am to 12:00 pm</option>
+                <option value="12:00-13:00">12:00 pm to 01:00 pm</option>
+                <option value="13:00-14:00">01:00 pm to 02:00 pm</option>
+                <option value="14:00-15:00">02:00 pm to 03:00 pm</option>
+                <option value="15:00-16:00">03:00 pm to 04:00 pm</option>
+                <option value="16:00-17:00">04:00 pm to 05:00 pm</option>
+                <option value="17:00-18:00">05:00 pm to 06:00 pm (Peak)</option>
+              </select>
+            </div>
+        
+            <!-- Summary Section -->
+            <div class="section">
+              <h2>Summary</h2>
+              <table id="summaryTable">
+                <!-- Summary table will be dynamically generated -->
+              </table>
+            </div>
+        
+            <!-- Continue with Purchase Button -->
+            <a href="details.html">
+                <button class="continueBtn">Continue with Purchase</button>
+            </a>
+            <a href="ticket.html">
+              <button class="continueBtn">Refresh</button>
+            </a>
+          </div>
+        
+          <script src="ticket.js"></script>
+
+
+<br>
+<br>
+        <!----- footer------>
+
+<hr style="height:4px;border-width:0;color:rgb(0, 0, 0);background-color:rgb(0, 0, 0)">
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>The Sri Lanka Tourism Alliance welcomes individuals or groups from Sri Lanka or abroad, including those in the public sector who work for the government, educational institutions, regional or industry<br> associations related to Sri Lanka tourism as well as those in the private sector who own or work for a business connected to Sri Lanka tourism. The Alliance does not charge for annual membership.</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-youtube"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-twitter"></i>
+    </div>
+    <p>Made with  <i class="fa fa-heart-o"></i> by Save The Turtles</p>
+</section>
+
+<!-----JavaScript for toggle menu------>
+
+        <script>
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+
+            function hideMenu(){
+                navLinks.style.right = "-200";
+            }
+        </script>
+
+
+    </body>
+</html>

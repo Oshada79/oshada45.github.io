@@ -1,0 +1,499 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(image/turtle6.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav img{
+    height: 60px;
+    width: 80%;
+    border: 4px solid #4db3e9;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;  
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 65px;
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 0.5s;
+}
+
+nav .fa{
+    display: none;
+}
+
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px; 
+    }
+    .text-box p{
+        margin: 10px 0 40px;
+        font-size: 13px;
+        color: #fff;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #04b7f3;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+}
+
+.nav-links ul{
+    padding: 30px;
+}
+
+/*-------------------------------------------KOSGODA PAGE--------------------------------------------------------*/
+.sub-header6{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(image/turtle15.webp);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.sub-header6 h1{
+    font-size: 60px;
+    margin-top: 50px;
+    font-family: Georgia;
+}
+
+.kosgoda h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    font-family: Georgia;
+    animation-delay: 0.5s;
+}
+
+.kosgoda .row {
+    display: flex;
+  }
+  
+.kosgoda .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.kosgoda .row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+}
+
+.kosgoda-col img {
+    padding-left: 27px;
+    border-radius: 5ch;
+    height: 320px;
+}
+.kosgoda-col1 img{
+    padding-left: 27px;
+    border-radius: 50%;
+}
+.kosgoda-col2  img{
+    padding-left: 27px;
+    border-radius: 5ch; 
+}
+
+/*-------------------------------------------------------------------*/
+.kosgoda2 h2{
+    padding-left: 50px;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: Georgia;    
+}
+.kosgoda2 p{
+    text-align: justify;
+    padding-left: 50px;
+    padding-top: 25px;
+    line-height: 35px;
+    font-size: 20px;
+    font-family: Georgia;}
+/*--------------------------------------------------------------------*/
+.kosgoda3 h2{
+    padding-left: 50px;
+    position: relative;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: Georgia;}
+    
+.kosgoda3 p{
+    position: relative;
+    text-align: justify;
+    padding-left: 50px;
+    padding-top: 25px;
+    line-height: 35px;
+    font-size: 20px;
+    font-family: Georgia;}
+.kosgoda4{
+    position: relative;
+}
+.kosgoda4 h1{
+    font-size: 25px;
+    padding-left: 20px;
+    font-family: Georgia;    font-weight: 500;
+}
+.kosgoda4 ul li{
+    text-align: justify;
+    position: relative;
+    left: 20%;
+    font-size: 20px;
+    line-height: 35px;
+    font-family: Georgia;
+}
+.imglink2 img{
+    width: 30%;
+    height: 50%;
+    padding-left: 180px;
+    position: relative;
+}
+
+.location2{
+    width: 50%;
+}
+.kos table{
+    width: 90%;
+    left: 5%;
+    position: relative;
+    background: none;
+    border: none;
+}
+.kos th{
+    background: none;
+    border: none;
+}
+.kos tr{
+    background: none;
+    border: none;
+}
+
+.anim{
+    opacity: 0;
+    transform: translateY(100px);
+    animation: moveup 0.5s linear forwards;
+}
+
+@keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+/*------------------------------------BENTOTA PAGE----------------------------------------------------*/
+.sub-header7{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(image/hatcher52.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.sub-header7 h1{
+    font-size: 60px;
+    margin-top: 50px;
+    font-family: Georgia;
+
+}
+
+.bentota h1{
+    text-align: center;
+    font-size: 40px;
+    font-family: Georgia;
+    font-weight: 600;
+}
+
+.bentota .row {
+    display: flex;
+  }
+  
+.bentota .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.bentota .row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+}
+
+.bentota-col img{
+    padding-left: 27px;
+    border-radius: 5ch;
+    height: 320px;
+}
+
+.bentota-col1 img{
+    padding-left: 27px;
+    border-radius: 50%;
+    height: 310px;
+}
+.bentota-col2 img{
+    padding-left: 27px;
+    border-radius: 5ch;
+    height: 300px;
+}
+/*-------------------------------------------------------------------*/
+.bentota2 h2{
+    padding-left: 50px;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: Georgia;
+   
+}
+.bentota2 p{
+    text-align: justify;
+    padding-left: 50px;
+    padding-top: 25px;
+    line-height: 35px;
+    font-size: 20px;
+    font-family: Georgia;
+}
+/*--------------------------------------------------------------------*/
+.bentota3 h2{
+    padding-left: 50px;
+    position: relative;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: Georgia;
+}
+
+.bentota3 p{
+    position: relative;
+    text-align: justify;
+    padding-left: 50px;
+    padding-top: 25px;
+    line-height: 35px;
+    font-size: 20px;
+    font-family: Georgia;
+}
+.bentota4{
+    position: relative;
+}
+.bentota4 h1{
+    font-size: 25px;
+    padding-left: 20px;
+    font-family: Georgia;
+    font-weight: 500;
+}
+.bentota4 ul li{
+    text-align: justify;
+    position: relative;
+    left: 20%;
+    font-size: 20px;
+    line-height: 35px;
+    font-family: Georgia;
+}
+.imglink3 img{
+    width: 30%;
+    height: 50%;
+    padding-left: 180px;
+    position: relative;
+}
+.footerhik{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    position: relative;
+    top: 10px;
+}
+
+.footerhik h4{
+    color: rgb(0, 0, 0);
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.footerhik p{
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+}
+
+.icons .fa{
+    color: red;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
+.fa-heart-o{
+    color: red; 
+}
+.location3{
+    width: 50%;
+}
+.ben table{
+    width: 90%;
+    left: 5%;
+    position: relative;
+    background: none;
+    border: none;
+}
+.ben th{
+    background: none;
+    border: none;
+}
+.ben tr{
+    background: none;
+    border: none;
+}
+
+.bubbles img{
+    width: 60px;
+    animation: bubbles 7s linear infinite;
+}
+.bubbles{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: -70px;
+}
+@keyframes bubbles{
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-80vh);
+        opacity: 0;
+    }
+    
+}
+
+.bubbles img:nth-child(1){
+    animation-delay: 2s;
+    width: 40px;
+}
+.bubbles img:nth-child(2){
+    animation-delay: 1s;
+}
+.bubbles img:nth-child(3){
+    animation-delay: 3s;
+    width: 45px;
+}
+.bubbles img:nth-child(4){
+    animation-delay: 4.5s;
+    width: 47px;
+}
+.bubbles img:nth-child(5){
+    animation-delay: 3s;
+    width: 45px;
+}
+.bubbles img:nth-child(6){
+    animation-delay: 6s;
+}
+.bubbles img:nth-child(7){
+    animation-delay: 7s;
+    width: 39px;
+}
